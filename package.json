@@ -1,0 +1,21 @@
+{
+  "name": "kafka-filings-learning",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small TypeScript project for learning Kafka with a filings publisher and context subscriber.",
+  "scripts": {
+    "topic:create": "tsx src/create-topic.ts",
+    "publish": "tsx src/producer.ts",
+    "consume": "tsx src/consumer.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
